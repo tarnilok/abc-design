@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abc-tasarım-programı</title>
+    <style>
+        #securityid, #name, #surname, #age, #mail, #photo {
+            position: absolute;
+            left: 150px;
+        }
+        #jobstartdate, #exp1, #exp2, #exp3, #exp4, #softlang {
+            position: absolute;
+            left: 200px;
+        }
+        #exp11, #exp22, #exp33, #exp44 {
+            position: absolute;
+            left: 220px;
+        }
+        fieldset {
+            line-height: 150%;
+            }
+    </style>
+</head>
+<body>
+    <h2>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</h1>
+    <form action="result.html" method="GET">
+        <fieldset>
+        <legend>Sözleşme Onay</legend>      
+            <input type="checkbox" name="agreement ok" id="acceptance" required>
+            <span>Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum.</span><br>
+            <input type="submit" value="Formu kaydet">
+            <input type="reset" value="Formu Temizle">
+        </fieldset>
+        <fieldset>
+        <legend>Kişisel Bilgiler</legend>   
+            <label for="securityid">Form Güvenlik ID</label>
+            <input type="text" name="Security ID" id="securityid" required ><br>
+            <label for="name">Ad</label>
+            <input type="text" name="Name" id="name" required><br>
+            <label for="surname">Soyad</label>
+            <input type="text" name="Surname" id="surname" required><br>
+            <label for="age">Yaş</label>
+            <input type="text" name="Age" id="age" required><br>
+            <label for="mail">Mail Adresi</label>
+            <input type="email" name="Mail" id="mail" required><br>
+            <label for="photo">Fotoğraf Ekle</label>
+            <input type="file" value="Dosya Seç" id="photo" accept="image/*" required>
+        </fieldset>   
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <label style="position: absolute; left: 130px;"><b>Buradaki Alanlar Mesleki Deneyim Kapsar</b></label><br>
+            <label for="jobstartdate">Sektöre Giriş Tarihi</label>
+            <input type="date" name="BusinessStartDate" id="jobstartdate" required><br><br>
+            <input type="radio" name="experience" value="1-5 years" id="exp1"><span id="exp11">1-5 yıl</span><br>
+            <input type="radio" name="experience" value="6-10 years" id="exp2"><span id="exp22">6-10 yıl</span><br>
+            <label style="position: absolute; top: 475px;">Sektör Deneyimi</label>
+            <input type="radio" name="experience" value="11-15 years" id="exp3"><span id="exp33">11-15 yıl</span><br>
+            <input type="radio" name="experience" value="15-upper years" id="exp4"><span id="exp44">15-üzeri</span><br>   
+        <br>
+            <label style="position: absolute; top: 600px;" for="softlang">Programlama Dilleri</label>
+            <select name="softwarelanguage" id="softlang" multiple size="5" required>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="C">C</option>
+                <option value="Bash/Shell">Bash/Shell</option>
+                <option value="SQL">SQL</option>
+            </select>
+        <br><br><br><br> 
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="agreementcopy" cols="40" rows="5" style="resize: none;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolore voluptatem, assumenda neque molestiae repellat tenetur delectus reprehenderit ullam itaque tempore aut qui natus ipsum quisquam, fuga in harum similique id atque quo minima quasi libero esse. Dignissimos cumque obcaecati aliquid deleniti tempora, consequatur vel ipsam minima labore optio placeat perferendis esse vitae, nostrum impedit. Vitae omnis pariatur aperiam quasi, laborum quidem alias. Laudantium, nisi, distinctio adipisci voluptatum aspernatur ipsum eius voluptas ducimus repellendus natus provident corporis iure tempore, assumenda vitae! Illum error quisquam dolor, doloribus consequuntur nisi tempore magnam ex accusamus, harum quas nemo? Cumque quisquam nulla blanditiis deserunt.</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="maillistok">Mail Listesine Katılmak İstiyorum</label>
+            <input type="radio" name="maillistjoin" id="maillistok" value="wanttojoinmaillist"><br>
+            <label for="maillistdeny">Mail Listesine Katılmak <u>İstemiyorum</u></label>
+            <input type="radio" name="maillistjoin" id="maillistdeny" value="notwanttojoinmaillist">
+        </fieldset>
+    </form>
+</body>
+</html>
